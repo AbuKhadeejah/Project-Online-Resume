@@ -124,7 +124,7 @@ var work = {
 };
 
 work.display = function(){
-
+    var job;
     for(job in work.jobs){
         $("#workExperience").append(HTMLworkStart);
 
@@ -174,6 +174,7 @@ var projects = {
 ]};
 
 projects.display = function(){
+    var project;
     for(project in projects.assigment){
 
         $("#projects").append(HTMLprojectStart);
@@ -192,7 +193,7 @@ projects.display = function(){
 
 
         if(projects.assigment[project].images.length>0){
-
+                var image;
                 for (image in projects.assigment[project].images)
                 formattedProjectImage= HTMLprojectImage.replace("%data%",projects.assigment[project].images[image]);
             $(".project-entry:last").append(formattedProjectImage);
@@ -280,7 +281,7 @@ var education = {
 education.display = function(){
 
     $("#education").append(HTMLschoolStart);
-
+    var school;
     for(school in education.schools){
 
 
@@ -303,7 +304,7 @@ education.display = function(){
             $(".education-entry:last").append(formattedSchoolLocation);
 
         if(education.schools[school].majors.length>0){
-
+                var major;
                 for (major in education.schools[school].majors){
 
                     formattedSchoolMajor= HTMLschoolMajor.replace("%data%",education.schools[school].majors[major]);
@@ -316,7 +317,7 @@ education.display = function(){
         }
 
 $(".education-entry:last").append(HTMLonlineClasses);
-
+    var course;
     for(course in education.onlineCourses){
 
 
