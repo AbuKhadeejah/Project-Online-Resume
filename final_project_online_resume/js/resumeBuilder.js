@@ -39,7 +39,7 @@ bio.display = function(){
 
 
 
-    var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic)
+    var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
     $("#header").append(formattedBioPic);
 
     var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.message);
@@ -65,20 +65,20 @@ bio.display = function(){
     var formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
     $("#topContacts").append(formattedTwitter);
 
-    var formattedMobile = HTMLmobile.replace(/%data%/g, bio.contacts.mobile);
+    formattedMobile = HTMLmobile.replace(/%data%/g, bio.contacts.mobile);
     $("#footerContacts").append(formattedMobile);
 
-    var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
+    formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
     $("#footerContacts").append(formattedEmail);
 
-    var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
+    formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
     $("#footerContacts").append(formattedGithub);
 
-    var formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
+    formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
     $("#footerContacts").append(formattedTwitter);
-    };
+    }
 
-}
+};
 // work history
 //----------------------------------------------------------------------------------
 
@@ -205,7 +205,7 @@ projects.display = function(){
 
          */
         }
-}
+};
 
 // educational history
 //----------------------------------------------------------------------------------
@@ -331,12 +331,8 @@ $(".education-entry:last").append(HTMLonlineClasses);
 
         formattedOnlineUrl= HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
                     $(".education-entry:last").append(formattedOnlineUrl);
-
-
     }
-
-
-}
+};
 
 
 
@@ -346,7 +342,7 @@ $(".education-entry:last").append(HTMLonlineClasses);
 
 // capitalize all last name and guarantees first letter in first name is capitalized
 function inName(name){
-    var name = bio.name;
+    name = bio.name;
     name = name.trim().split(" ");
     console.log(name);
     name[1]= name[1].toUpperCase();
@@ -357,7 +353,7 @@ function inName(name){
 
 }
 
-$("#main").append(internationalizeButton)
+$("#main").append(internationalizeButton);
 
 
 // analytics (clicks)
