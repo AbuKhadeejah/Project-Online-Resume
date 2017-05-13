@@ -8,9 +8,9 @@ var bio = {
         "mobile": "016 785 0397",
         "email": "abuabdurrahman1435@gmail.com",
         "github": "https://github.com/AbuKhadeejah",
-        "website": "www.ittibaabookstore.com",
         "twitter": "@IAbuKhadeejah",
-        "location": "Melaca, MY"
+        "location": "Melaca, MY",
+        "website": "www.ittibaabookstore.com"
     },
     "welcomeMessage": "iam working on it...",
     "skills": [
@@ -70,9 +70,9 @@ bio.display = function() {
     $("#footerContacts").append(formattedTwitter);
 
     bio.skills.forEach(function (skill) {
-                var formattedSkill = HTMLskills.replace("%data%", skill);
-                $("#skills").append(formattedSkill);
-        });
+        var formattedSkill = HTMLskills.replace("%data%", skill);
+        $("#skills").append(formattedSkill);
+    });
 
 };
 
@@ -90,16 +90,16 @@ var education = {
         "dates": "July 2005",
         "url": "http://www.gesamtschule-kuerten.de/"
     },
-    {
-        "name": "Georg Simon Ohm",
-        "degree": "Bachelor",
-        "location": "Cologne, NRW",
-        "majors": [
-            "Media Design"
-        ],
-        "dates": "July 2010",
-        "url": "http://www.gso-koeln.de/"
-    }
+        {
+            "name": "Georg Simon Ohm",
+            "location": "Cologne, NRW",
+            "degree": "Bachelor",
+            "majors": [
+                "Media Design"
+            ],
+            "dates": "July 2010",
+            "url": "http://www.gso-koeln.de/"
+        }
     ],
     "onlineCourses": [{
         "title": "Try Python",
@@ -107,42 +107,42 @@ var education = {
         "dates": "2017",
         "url": "https://www.codeschool.com/courses/try-python"
     },
-    {
-        "title": "Flying Through Python",
-        "school": "Codeschool",
-        "dates": "2017",
-        "url": "https://www.codeschool.com/courses/flying-through-python"
-    },
-    {
-        "title": "Assembling Sass",
-        "school": "Codeschool",
-        "dates": "2017",
-        "url": "https://www.codeschool.com/courses/assembling-sass"
-    },
-    {
-        "title": "CSS Cross-Country",
-        "school": "Codeschool",
-        "dates": "Sept 2017",
-        "url": "https://www.codeschool.com/courses/css-cross-country"
-    },
-    {
-        "title": "Front-end Formations",
-        "school": "Codeschool",
-        "dates": "Sept 2017",
-        "url": "https://www.codeschool.com/courses/front-end-formations"
-    },
-    {
-        "title": "Front-end Foundations",
-        "school": "Codeschool",
-        "dates": "Sept 2017",
-        "url": "https://www.codeschool.com/courses/front-end-foundations"
-    },
-    {
-        "title": "intro to programming",
-        "school": "Udacity",
-        "dates": "Sept 2017",
-        "url": "https://www.udacity.com"
-    }
+        {
+            "title": "Flying Through Python",
+            "school": "Codeschool",
+            "dates": "2017",
+            "url": "https://www.codeschool.com/courses/flying-through-python"
+        },
+        {
+            "title": "Assembling Sass",
+            "school": "Codeschool",
+            "dates": "2017",
+            "url": "https://www.codeschool.com/courses/assembling-sass"
+        },
+        {
+            "title": "CSS Cross-Country",
+            "school": "Codeschool",
+            "dates": "Sept 2017",
+            "url": "https://www.codeschool.com/courses/css-cross-country"
+        },
+        {
+            "title": "Front-end Formations",
+            "school": "Codeschool",
+            "dates": "Sept 2017",
+            "url": "https://www.codeschool.com/courses/front-end-formations"
+        },
+        {
+            "title": "Front-end Foundations",
+            "school": "Codeschool",
+            "dates": "Sept 2017",
+            "url": "https://www.codeschool.com/courses/front-end-foundations"
+        },
+        {
+            "title": "intro to programming",
+            "school": "Udacity",
+            "dates": "Sept 2017",
+            "url": "https://www.udacity.com"
+        }
     ]
 };
 
@@ -213,34 +213,34 @@ var work = {
         "dates": "2010",
         "description": "set up, operate, and maintain the electrical equipment for radio and television broadcasts."
     },
-    {
-        "employer": "Selfemployment",
-        "title": "Media Designer Visual/Sound",
-        "location": "Cologne, NRW",
-        "dates": "2010 - 2014",
-        "description": "maintain the electrical equipment for radio and television broadcasts, concerts, sound recordings, and movies as well as in office and school buildings."
-    },
-    {
-        "employer": "Beard Brothers' BBQ",
-        "title": "Co-Foounder, CEO",
-        "location": "Kuala Lumpur, MY",
-        "dates": "2012 - 2016",
-        "description": "worked on restaurant's operational objectives,managing restaurant's financial objectives forecasting requirements; preparing an annual budget; scheduling expenditures; analyzing variances; initiating corrective actions."
-    },
-    {
-        "employer": "Selfemployment",
-        "title": "Tijarah",
-        "location": "Melacca, MY",
-        "dates": "2016 - On Going.",
-        "description": "Buying and Selling of Books, Honey, Beard Oil and Beard Balm."
-    },
-    {
-        "employer": "Mosquefinder",
-        "title": "Trainee",
-        "location": "Melacca, MY",
-        "dates": "2017 - On Going.",
-        "description": "Learning HTML, CSS, Python, Javascript and hopefully Swift in the Future"
-    }
+        {
+            "employer": "Selfemployment",
+            "title": "Media Designer Visual/Sound",
+            "location": "Cologne, NRW",
+            "dates": "2010 - 2014",
+            "description": "maintain the electrical equipment for radio and television broadcasts, concerts, sound recordings, and movies as well as in office and school buildings."
+        },
+        {
+            "employer": "Beard Brothers' BBQ",
+            "title": "Co-Foounder, CEO",
+            "location": "Kuala Lumpur, MY",
+            "dates": "2012 - 2016",
+            "description": "worked on restaurant's operational objectives,managing restaurant's financial objectives forecasting requirements; preparing an annual budget; scheduling expenditures; analyzing variances; initiating corrective actions."
+        },
+        {
+            "employer": "Selfemployment",
+            "title": "Tijarah",
+            "location": "Melacca, MY",
+            "dates": "2016 - On Going.",
+            "description": "Buying and Selling of Books, Honey, Beard Oil and Beard Balm."
+        },
+        {
+            "employer": "Mosquefinder",
+            "title": "Trainee",
+            "location": "Melacca, MY",
+            "dates": "2017 - On Going.",
+            "description": "Learning HTML, CSS, Python, Javascript and hopefully Swift in the Future"
+        }
     ]
 };
 
@@ -276,15 +276,13 @@ work.display = function() {
 // projects
 //----------------------------------------------------------------------------------
 
-var projects = {
-    "assigment": [{
-        "title": "Formel 1",
-        "dates": "2009 - 2010",
-        "description": "set up, operate, and maintain the electrical equipment for radio and television broadcasts.",
-        "images": ["images/2009abudhabigrandprix_yasisland-11.jpg"],
-        "location": "Abu Dhabi, UAE"
-
-    },
+var projects = [{
+    "title": "Formel 1",
+    "dates": "2009 - 2010",
+    "description": "set up, operate, and maintain the electrical equipment for radio and television broadcasts.",
+    "images": ["images/2009abudhabigrandprix_yasisland-11.jpg"],
+    "location": "Abu Dhabi, UAE"
+},
     {
         "title": "Formel 1",
         "dates": "2009 - 2010",
@@ -299,12 +297,11 @@ var projects = {
         "images": ["images/alexandria-egypt-normal.jpg"],
         "location": "Alexandria, Egypt"
     }
-    ]
-};
+];
 
 projects.display = function() {
     //var project;
-    projects.assigment.forEach(function (project) {
+    projects.forEach(function (project) {
         /*    for(project in projects.assigment){ */
 
         $("#projects").append(HTMLprojectStart);
