@@ -276,13 +276,16 @@ work.display = function() {
 // projects
 //----------------------------------------------------------------------------------
 
-var projects = [{
-    "title": "Formel 1",
-    "dates": "2009 - 2010",
-    "description": "set up, operate, and maintain the electrical equipment for radio and television broadcasts.",
-    "images": ["images/2009abudhabigrandprix_yasisland-11.jpg"],
-    "location": "Abu Dhabi, UAE"
-},
+var projects = {
+
+    projects:[{
+            "title": "Formel 1",
+            "dates": "2009 - 2010",
+            "description": "set up, operate, and maintain the electrical equipment for radio and television broadcasts.",
+            "images": ["images/2009abudhabigrandprix_yasisland-11.jpg"],
+            "location": "Abu Dhabi, UAE"
+
+    },
     {
         "title": "Formel 1",
         "dates": "2009 - 2010",
@@ -296,12 +299,11 @@ var projects = [{
         "description": "set up, operate, and maintain the electrical equipment for radio and television broadcasts.",
         "images": ["images/alexandria-egypt-normal.jpg"],
         "location": "Alexandria, Egypt"
-    }
-];
-
+    }]
+};
 projects.display = function() {
     //var project;
-    projects.forEach(function (project) {
+    projects.projects.forEach(function (project) {
         /*    for(project in projects.assigment){ */
 
         $("#projects").append(HTMLprojectStart);
